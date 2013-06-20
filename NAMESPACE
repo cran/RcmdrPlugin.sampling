@@ -1,0 +1,6 @@
+# last modified 16 april 2013
+
+
+import(Rcmdr, lpSolve, sampling, MASS, tcltk)
+
+exportPattern("^[^\\.]")

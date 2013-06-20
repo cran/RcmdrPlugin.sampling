@@ -1,0 +1,18 @@
+#type   menu/item       operation/parent   label                                          command/menu                activation           install?
+
+
+#Sampling options
+menu    samplingMenu    topMenu            ""                                              ""             	      ""                  ""
+item    topMenu         cascade            "Sampling"                                      samplingMenu               ""                  ""
+
+
+menu	onesampleMenu	samplingMenu	   "" 						   ""			      ""		  ""
+item    onesampleMenu   command            "Draw a sample"                                 SRS.notebook               "activeDataSetP()"  ""
+item    onesampleMenu   command            "Draw a stratifed sample"                       Strata.notebook            "activeDataSetP()"  ""
+item    samplingMenu    cascade            "One-stage sampling"                        	   onesampleMenu              ""                  ""
+
+menu	twosampleMenu	samplingMenu	   ""						   ""			      ""		   ""
+item    twosampleMenu   command            "Calculate sample sizes"                        Sample.datasets            "activeDataSetP()"   ""
+item    twosampleMenu   command            "Draw a sample - Stage 1"                       Stage1.notebook            "activeDataSetP()"   ""
+item    twosampleMenu   command            "Draw a sample - Stage 2"                       Stage2.notebook            "activeDataSetP()"   ""
+item    samplingMenu    cascade            "Two-stage sampling"                            twosampleMenu              ""                   ""
