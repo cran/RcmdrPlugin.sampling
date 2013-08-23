@@ -4,8 +4,6 @@
 
 
 Strata.notebook<-function() {
-	library(sampling)
-
 	initializeDialog(title=gettextRcmdr("One-Stage Stratified Sample"))
 	.activeDataSet <- ActiveDataSet()
 	vars<-names(get(.activeDataSet))

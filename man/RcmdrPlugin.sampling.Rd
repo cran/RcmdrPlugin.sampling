@@ -34,5 +34,7 @@
 \description{This provides tools to assist with official statistical Surveys, including calculating sample sizes and sampling with a 2-stage design.}
 \references{see the EHES manual published on the EHES website:
 http://www.ehes.info}
-\author{Susie Jentoft and Johan Heldal}
+\author{Susie Jentoft and Johan Heldal
+
+Maintainer: susie.jentoft@ssb.no}
 \keyword{ survey }

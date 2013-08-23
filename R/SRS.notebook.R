@@ -3,8 +3,6 @@
 ######## Author Susie Jentoft
 
 SRS.notebook<-function() {
-	library(sampling)
-	library(lpSolve)
 	initializeDialog(title=gettextRcmdr("One-Stage Simple Random Sample"))
 	.activeDataSet <- ActiveDataSet()
 	sizedefault <- ifelse(nrow(get(.activeDataSet))>=200, 100, round(nrow(get(.activeDataSet))/2))
